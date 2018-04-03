@@ -56,7 +56,7 @@ function buildMapping(type: Function): [string | undefined, EsIndexTemplateMappi
 }
 
 function buildFields(data: Fields): EsIndexTemplateMappingFields {
-  const fields = {};
+  const fields: EsIndexTemplateMappingFields = {};
   for (const name of Object.keys(data)) {
     fields[name] = buildField(data[name]);
   }

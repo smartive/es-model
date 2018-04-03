@@ -4,8 +4,8 @@ export function generateObjectDecorator<T>(): (data: T) => ClassDecorator {
   return (data: T): ClassDecorator => (target: any) => setMetadata(target.prototype, data);
 }
 
-export function generatePropertyDecorator<T>(key: string): PropertyDecorator {
-  return (data: T) => (target: Object, name: string) => {
+export function generatePropertyDecorator<T>(key: string): (data: T) => PropertyDecorator {
+  return (data: T): PropertyDecorator => (target: Object, name: string | symbol) => {
     let mapping = getMetadata<{ [key: string]: T }>(target, key);
     if (!mapping) {
       mapping = {};
