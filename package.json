@@ -1,5 +1,5 @@
 {
-  "name": "es-model",
+  "name": "@smartive/es-model",
   "version": "0.0.0-development",
   "description": "Annotate your datastructure to generate an elasticsearch index template",
   "main": "index.js",
