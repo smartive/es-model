@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`decorators EsObject  generates metadata 1`] = `
+Object {
+  "a": Object {
+    "_source": Object {
+      "enabled": true,
+    },
+    "dynamic": "strict",
+    "properties": Object {
+      "b": Object {
+        "properties": Object {
+          "aProperty": Object {
+            "type": "keyword",
+          },
+        },
+        "type": "nested",
+      },
+      "keyword": Object {
+        "type": "keyword",
+      },
+      "keywordArray": Object {
+        "type": "keyword",
+      },
+      "text": Object {
+        "type": "text",
+      },
+      "withFields": Object {
+        "fields": Object {
+          "keyword": Object {
+            "type": "keyword",
+          },
+        },
+        "type": "keyword",
+      },
+    },
+  },
+}
+`;
