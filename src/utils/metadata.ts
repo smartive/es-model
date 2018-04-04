@@ -24,3 +24,7 @@ export function getMetadata<T>(target: any, key?: string): T {
 
   return Reflect.getMetadata(KEY, target);
 }
+
+export function getPrimitiveType(objectType: Function, key: string): Function | null {
+  return Reflect.getMetadata('design:type', objectType, key);
+}
