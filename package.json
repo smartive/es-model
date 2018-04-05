@@ -11,12 +11,15 @@
     "lint": "tslint -c ./tslint.json -p ./config/tsconfig.build.json",
     "test": "npm run lint && npm run clean && jest -c ./jest.json",
     "test:watch": "npm run clean && jest -c ./jest.json --watch",
-    "typedoc": "del-cli ./docs/api && typedoc --ignoreCompilerErrors --out ./docs/api --mode file --tsconfig ./config/tsconfig.build.json --theme ./docs/typedoc-theme --readme none ./src/",
+    "typedoc": "del-cli ./docs && typedoc --ignoreCompilerErrors --out ./docs --mode file --tsconfig ./config/tsconfig.build.json ./src/",
     "semantic-release": "semantic-release"
   },
   "engines": {
     "node": ">=9",
     "npm": "*"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -34,15 +37,15 @@
   "dependencies": {},
   "devDependencies": {
     "@smartive/tslint-config": "^3.0.1",
-    "@types/jest": "^22.0.1",
+    "@types/jest": "^22.2.2",
     "del-cli": "^1.1.0",
-    "jest": "^22.1.1",
-    "semantic-release": "^12.2.2",
-    "ts-jest": "^22.0.1",
+    "jest": "^22.4.3",
+    "semantic-release": "^15.1.5",
+    "ts-jest": "^22.4.2",
     "tslint": "^5.9.1",
-    "tslint-config-airbnb": "^5.4.2",
-    "tsutils": "^2.18.0",
-    "typedoc": "^0.10.0",
-    "typescript": "^2.8.0"
+    "tslint-config-airbnb": "^5.8.0",
+    "tsutils": "^2.26.0",
+    "typedoc": "^0.11.1",
+    "typescript": "^2.8.1"
   }
 }
