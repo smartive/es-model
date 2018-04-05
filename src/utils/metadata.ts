@@ -1,4 +1,4 @@
-export const KEY = 'es-model';
+const KEY = 'es-model';
 
 export function setMetadata(target: any, metadata: any, key?: string): void {
   if (key) {

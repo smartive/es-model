@@ -31,15 +31,15 @@ export function buildMappings(types: Function[]): EsIndexTemplateMappings {
   const mappings: EsIndexTemplateMappings = {};
 
   for (const type of types) {
-    const [name, mapping] = buildMapping(type.prototype);
+    const { name, mapping } = buildMapping(type.prototype);
     mappings[name || type.name.toLowerCase()] = mapping;
   }
 
   return mappings;
 }
 
-function buildMapping(type: Function): [string | undefined, EsIndexTemplateMapping] {
-  const res: EsIndexTemplateMapping = {
+function buildMapping(type: Function): { name: string | undefined, mapping: EsIndexTemplateMapping } {
+  const mapping: EsIndexTemplateMapping = {
     properties: {},
   };
   let name: string | undefined;
@@ -47,16 +47,16 @@ function buildMapping(type: Function): [string | undefined, EsIndexTemplateMappi
 
   if (meta) {
     name = meta.name;
-    res._source = meta._source;
-    res.dynamic = meta.dynamic;
+    mapping._source = meta._source;
+    mapping.dynamic = meta.dynamic;
   }
   
   const properties = getMetadata<Fields>(type, 'properties');
   if (properties) {
-    res.properties = buildFields(properties, type);
+    mapping.properties = buildFields(properties, type);
   }
 
-  return [name, res];
+  return { name, mapping };
 }
 
 function buildFields(data: Fields, type: Function): EsIndexTemplateMappingFields {
