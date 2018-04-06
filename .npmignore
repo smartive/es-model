@@ -14,6 +14,7 @@ coverage
 !*.d.ts
 test
 
+.appveyor.yml
 jest.json
 .travis.yml
 tsconfig.json
