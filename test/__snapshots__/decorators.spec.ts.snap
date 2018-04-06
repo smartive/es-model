@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`decorators EsObject  generates metadata 1`] = `
+Object {
+  "_source": Object {
+    "enabled": true,
+  },
+  "dynamic": "strict",
+}
+`;
+
+exports[`decorators EsObject  generates metadata 2`] = `
+Object {
+  "b": Object {
+    "type": [Function],
+  },
+  "keyword": undefined,
+  "keywordArray": Object {
+    "type": [Function],
+  },
+  "text": Object {
+    "type": "text",
+  },
+  "withFields": Object {
+    "type": [Function],
+  },
+}
+`;
+
+exports[`decorators EsObject  generates metadata 3`] = `undefined`;
+
+exports[`decorators EsObject  generates metadata 4`] = `undefined`;
+
+exports[`decorators EsObject  generates metadata 5`] = `
+Object {
+  "aProperty": undefined,
+}
+`;
+
+exports[`decorators EsObject  generates metadata 6`] = `undefined`;
+
+exports[`decorators EsObject  generates metadata 7`] = `
+Object {
+  "type": "nested",
+}
+`;
+
+exports[`decorators EsObject  generates metadata 8`] = `
+Object {
+  "aProperty": undefined,
+}
+`;
+
+exports[`decorators EsObject  generates metadata 9`] = `undefined`;
+
+exports[`decorators EsObject  generates metadata 10`] = `
+Object {
+  "type": "keyword",
+}
+`;
+
+exports[`decorators EsObject  generates metadata 11`] = `undefined`;
+
+exports[`decorators EsObject  generates metadata 12`] = `
+Object {
+  "keyword": undefined,
+}
+`;

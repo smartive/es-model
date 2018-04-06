@@ -1,0 +1,21 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directory
+node_modules
+
+# Typescript stuff
+build
+coverage
+
+*.ts
+!*.d.ts
+test
+
+jest.json
+.travis.yml
+tsconfig.json
+tslint.json
+config/
