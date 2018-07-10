@@ -41,7 +41,7 @@
     "del-cli": "^1.1.0",
     "jest": "^22.4.3",
     "semantic-release": "^15.1.5",
-    "ts-jest": "^22.4.2",
+    "ts-jest": "^23.0.0",
     "tslint": "^5.9.1",
     "tslint-config-airbnb": "^5.8.0",
     "tsutils": "^2.26.0",
