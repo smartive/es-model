@@ -45,7 +45,7 @@
     "tslint": "^5.9.1",
     "tslint-config-airbnb": "^5.8.0",
     "tsutils": "^2.26.0",
-    "typedoc": "^0.11.1",
+    "typedoc": "^0.12.0",
     "typescript": "^2.8.1"
   }
 }
