@@ -9,7 +9,6 @@ import { buildMappings } from '../src/utils/template';
 describe('decorators', () => {
   describe('EsObject ', () => {
     it('generates metadata', () => {
-
       @EsSubMapping()
       class Obj {
         @EsProperty()
@@ -43,12 +42,12 @@ describe('decorators', () => {
 
         @EsProperty({ type: 'text' })
         text: string;
-      
+
         @EsProperty({ type: Obj })
         b: Obj;
 
         @EsProperty({ type: Nested })
-        b: Nested;
+        c: Nested;
 
         @EsProperty({ type: WithFields })
         withFields: WithFields;

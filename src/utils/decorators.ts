@@ -11,6 +11,6 @@ export function generatePropertyDecorator<T>(key: string): (data?: T) => Propert
       mapping = {};
       setMetadata(target, mapping, key);
     }
-    mapping[name] = data;
+    mapping[name.toString()] = data;
   };
 }
