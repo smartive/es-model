@@ -50,7 +50,7 @@ function buildMapping(type: Function): { name: string | undefined, mapping: EsIn
     mapping._source = meta._source;
     mapping.dynamic = meta.dynamic;
   }
-  
+
   const properties = getMetadata<Fields>(type, 'properties');
   if (properties) {
     mapping.properties = buildFields(properties, type);
@@ -94,12 +94,12 @@ function buildField(field: Field, name: string, type: Function): EsIndexTemplate
           res.type = 'object';
 
           const prototype = field.type.prototype;
-      
+
           const fieldTypeMeta = getMetadata<SubMappingMeta>(prototype);
           if (fieldTypeMeta) {
             res = { ...res, ...fieldTypeMeta };
           }
-      
+
           const properties = getMetadata<Fields>(prototype, 'properties');
           if (properties) {
             res.properties = buildFields(properties, prototype);
