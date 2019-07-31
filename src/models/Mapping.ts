@@ -1,9 +1,37 @@
-export type SimpleFieldType = 'text' | 'keyword' | 'date' | 'long' | 'integer' | 'double' | 'boolean' | 'ip';
-export type ObjectFieldType = 'object' | 'nested';
-export type SpecializedFieldType = 'geo_point' | 'geo_shape' | 'completion';
+// Types according to https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html
+export type CoreDatatype =
+  | 'text'
+  | 'keyword'
+  | 'date'
+  | 'date_nanos'
+  | 'long'
+  | 'integer'
+  | 'short'
+  | 'byte'
+  | 'double'
+  | 'float'
+  | 'half_float'
+  | 'scaled_float'
+  | 'boolean'
+  | 'binary'
+  | 'integer_range'
+  | 'float_range'
+  | 'long_range'
+  | 'double_range'
+  | 'date_range';
+export type ComplexDatatype = 'object' | 'nested';
+export type SpecialisedDatatype =
+  | 'geo_point'
+  | 'geo_shape'
+  | 'completion'
+  | 'ip'
+  | 'completion'
+  | 'token_count'
+  | 'murmur3'
+  | 'annotated-text';
 
 export type Field = {
-  type?: SimpleFieldType | SpecializedFieldType | Function;
+  type?: CoreDatatype | SpecialisedDatatype | Function;
   search_analyzer?: string;
   analyzer?: string;
   format?: 'date' | 'hour_minute';
@@ -22,6 +50,6 @@ export type MappingMeta = {
 };
 
 export type SubMappingMeta = {
-  type?: SimpleFieldType | ObjectFieldType;
+  type?: CoreDatatype | ComplexDatatype;
   include_in_parent?: boolean;
 };
