@@ -15,7 +15,7 @@
     "semantic-release": "semantic-release"
   },
   "engines": {
-    "node": ">=9",
+    "node": ">=10",
     "npm": "*"
   },
   "publishConfig": {
@@ -36,16 +36,19 @@
   "homepage": "https://github.com/smartive/es-model#readme",
   "dependencies": {},
   "devDependencies": {
-    "@smartive/tslint-config": "^4.0.0",
-    "@types/jest": "^23.0.0",
-    "del-cli": "^1.1.0",
+    "@smartive/tslint-config": "^7.0.1",
+    "@types/jest": "^24.0.16",
+    "del-cli": "^2.0.0",
     "jest": "^24.8.0",
-    "semantic-release": "^15.1.5",
+    "semantic-release": "^15.13.18",
     "ts-jest": "^24.0.2",
-    "tslint": "^5.9.1",
-    "tslint-config-airbnb": "^5.8.0",
-    "tsutils": "^2.26.0",
-    "typedoc": "^0.11.1",
-    "typescript": "^2.8.1"
+    "tslint": "^5.18.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tsutils": "^3.14.1",
+    "typedoc": "^0.15.0",
+    "typescript": "^3.5.3"
+  },
+  "peerDependencies": {
+    "typescript": "3.x"
   }
 }
