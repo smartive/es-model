@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@smartive/tslint-config": "^7.0.1",
-    "@types/jest": "^24.0.17",
+    "@types/jest": "^25.1.2",
     "del-cli": "^2.0.0",
     "jest": "^24.8.0",
     "semantic-release": "^15.13.18",
