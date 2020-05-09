@@ -43,7 +43,7 @@
     "del-cli": "^2.0.0",
     "jest": "^24.8.0",
     "semantic-release": "^15.13.18",
-    "ts-jest": "^24.0.2",
+    "ts-jest": "^25.5.1",
     "tslint": "^5.18.0",
     "tsutils": "^3.14.1",
     "typedoc": "^0.15.0",
