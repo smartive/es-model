@@ -50,6 +50,6 @@
     "typescript": "^3.5.3"
   },
   "peerDependencies": {
-    "typescript": "3.x"
+    "typescript": "3.x || 4.x"
   }
 }
