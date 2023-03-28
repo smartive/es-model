@@ -1,9 +1,5 @@
 Annotate your model and generate an elasticsearch index template.
-
-[![Build Status](https://travis-ci.org/smartive/es-model.svg)](https://travis-ci.org/smartive/es-model)
-[![Build Status](https://ci.appveyor.com/api/projects/status/7m14ruqjaopwbfn4?svg=true)](https://ci.appveyor.com/project/buehler/es-model)
-[![npm](https://img.shields.io/npm/v/es-model.svg?maxAge=3600)](https://www.npmjs.com/package/es-model)
-[![Coverage status](https://img.shields.io/coveralls/smartive/es-model.svg?maxAge=3600)](https://coveralls.io/github/smartive/es-model)
+[![npm](https://img.shields.io/npm/v/@smartive/es-model.svg?maxAge=3600)](https://www.npmjs.com/package/@smartive/es-model)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Greenkeeper badge](https://badges.greenkeeper.io/smartive/es-model.svg)](https://greenkeeper.io/)
 
@@ -11,7 +7,7 @@ Annotate your model and generate an elasticsearch index template.
 
 To install this package, simply run
 
-[![NPM](https://nodei.co/npm/es-model.png?downloads=true&stars=true)](https://nodei.co/npm/es-model/)
+[![NPM](https://nodei.co/npm/@smartive/es-model.png?downloads=true&stars=true)](https://nodei.co/npm/@smartive/es-model/)
 
 ## Changelog
 
