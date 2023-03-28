@@ -14,8 +14,7 @@
     "emitDecoratorMetadata": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "lib": ["es2015"],
-    "types": []
+    "lib": ["es2015"]
   },
   "include": ["../src/**/*"]
 }
