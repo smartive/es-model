@@ -3,5 +3,5 @@
   "compilerOptions": {
     "outDir": "../"
   },
-  "exclude": []
+  "exclude": ["../node_modules"]
 }
