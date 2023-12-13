@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/smartive/es-model#readme",
   "dependencies": {
-    "reflect-metadata": "^0.1.13"
+    "reflect-metadata": "^0.2.0"
   },
   "devDependencies": {
     "@smartive/tslint-config": "^7.0.1",
