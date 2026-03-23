@@ -47,9 +47,9 @@
     "tslint": "^5.18.0",
     "tsutils": "^3.14.1",
     "typedoc": "^0.24.0",
-    "typescript": "^5.0.0"
+    "typescript": "^6.0.0"
   },
   "peerDependencies": {
-    "typescript": "3.x || 4.x || 5.x"
+    "typescript": "3.x || 4.x || 5.x || 6.x"
   }
 }
